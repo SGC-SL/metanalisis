@@ -1,0 +1,196 @@
+body {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+.quarto-title-block .quarto-title-banner,
+.quarto-body {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+header.scrolled {
+    opacity: 0; /* Desaparece al hacer scroll */
+    pointer-events: none; /* Desactiva interacciones con el header cuando desaparece */
+}
+
+// use litera as the base
+$theme: "lumen" !default;
+
+// fonts
+$font-family-sans-serif: "Roboto", Roboto, serif;
+$font-family-monospace: "Fira Mono", Fira;
+
+// colours
+// $body-bg: #FFFBF7;
+$link-color: #E06E53;
+$navbar-hl: #E06E53;
+
+.h4 {
+  font-size: 1.11rem !important;
+}
+
+h4 {
+  font-size: 1.11rem !important;
+}
+
+.text-image-container {
+   position: relative; /* Posiciona los elementos dentro del contenedor */
+   max-height: 100vh;
+   width: 100vh;
+   height: 50vh;
+   overflow: hidden;
+   display: flex; /* Crea un diseño en línea (horizontal) */
+   align-items: center; /* Alinea verticalmente los elementos */
+   justify-content: space-between;
+   margin: 100px;
+   margin-top: 0px;/* Deja espacio entre el texto y la imagen */
+  }
+
+.text-content {
+    flex: 1; /* Ocupa más espacio para el texto */
+    padding-right: 1rem;
+    text-align: justify;/* Espaciado a la derecha */
+}
+
+.image-content {
+    flex: 0.2; /* Ocupa menos espacio para la imagen */
+}
+
+.image-content img {
+    max-width: 50%; /* Asegura que la imagen no se salga del contenedor */
+    height: 50%;
+    margin-left: 0;
+    left: 0;/* Mantiene las proporciones */
+}
+
+.image-content-1 {
+    flex: 0.2; /* Ocupa menos espacio para la imagen */
+}
+
+.image-content-1 img {
+    max-width: 100%; /* Asegura que la imagen no se salga del contenedor */
+    height: 100%;
+    right: 0;
+    float: right;/* Mantiene las proporciones */
+}
+
+.cuadro-grande {
+            width: 500px; /* Ancho del cuadro */
+            height: 500px; /* Altura del cuadro */
+        }
+
+      .card {
+        background: #ffffff;
+          border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 300px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+      
+      .card img {
+        width: 100%;
+        height: auto;
+      }
+      
+      .card-content {
+        padding: 20px;
+      }
+      
+      .card-title {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: #333333;
+      }
+      
+      .card-description {
+        font-size: 1rem;
+        color: #666666;
+          line-height: 1.5;
+      }
+      
+      .card-button {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px 20px;
+        background-color: #007bff;
+          color: #ffffff;
+          text-decoration: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        transition: background-color 0.3s ease;
+      }
+      
+      .card-button:hover {
+        background-color: #0056b3;
+      }
+
+.contenedor {
+      position: relative;
+      display: flex;
+      
+      gap: 5px;
+    }
+
+@media only screen and (max-width: 600px) {
+  /* Estilos para dispositivos móviles */
+  .background-container {
+    height: 100vh;
+  }
+  .foreground-text {
+    font-size: 1.5rem;
+  }
+  .ALA-top, .ALA-bottom {
+    font-size: 40px;
+  }
+}
+
+.contenedor_lista {
+            margin: 50px;
+            display: flex;
+            justify-content: space-between; /* Separar las listas horizontalmente */
+            align-items: flex-start; /* Alinear las listas al inicio */
+            border: 1px solid #000; /* Borde del cuadro */
+            border-radius: 10px; /* Bordes redondeados */
+            padding: 20px; /* Espaciado interno */
+            width: 900px;
+            background-color: white;: ;/* Ancho del cuadro */
+        }
+
+.lista {
+            padding: 20px; 
+            margin: 10px; border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+            background-color: #cbecfd; 
+            float: left;
+            width: 45%; /* Cada lista ocupa el 45% del ancho del contenedor */
+        }
+.lista_1 {
+            padding: 20px; 
+            margin: 10px; border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+            background-color: #eaf6b5; 
+            float: left;
+            width: 45%; /* Cada lista ocupa el 45% del ancho del contenedor */
+        }
+
+.linea-vertical {
+            border-left: 1px solid #000; /* Línea vertical */
+            height: auto; /* Altura dinámica según el contenido */
+        }
+
+
+
+
+
