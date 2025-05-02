@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Bienvenidos al curso – Descubriendo los metaanálisis</title>
+<title>Bienvenidos al curso – RV y Meta: Guía de supervivencia</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -161,7 +161,7 @@ ul.task-list li input[type="checkbox"] {
 
           text-align: center;
 
-          font-size: 80px;
+          font-size: 50px;
 
           color: #405295;
 
@@ -195,7 +195,7 @@ ul.task-list li input[type="checkbox"] {
 
           text-align: center;
 
-          font-size: 80px;
+          font-size: 70px;
 
           color: #1d304b;
 
@@ -410,9 +410,9 @@ ul.task-list li input[type="checkbox"] {
 
             <div class="foreground-text">
 
-              <div class="ALA-top">Metanálisis</div>
+              <div class="ALA-top">Revisiones sistemáticas y meta-análisis:</div>
 
-              <div class="ALA-bottom">al descubierto</div>
+              <div class="ALA-bottom">Guía de supervivencia</div>
 
             </div>
 
@@ -423,6 +423,10 @@ ul.task-list li input[type="checkbox"] {
               
 
               
+<meta name="mermaid-theme" content="forest">
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/monaco-editor@0.47.0/min/vs/editor/editor.main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   
@@ -701,10 +705,10 @@ iframe.qwebr-output-code-browse {
 // Document level settings ----
 
 // Determine if we need to install R packages
-globalThis.qwebrInstallRPackagesList = ['ggplot2', 'dplyr', 'metafor'];
+globalThis.qwebrInstallRPackagesList = [''];
 
 // Specify possible locations to search for the repository
-globalThis.qwebrPackageRepoURLS = ['https://repo.r-wasm.org/'];
+globalThis.qwebrPackageRepoURLS = ['C:/Users/Aprai/Desktop/Trabajo/Osakidetza/metanalisis', 'https://repo.r-wasm.org/'];
 
 // Check to see if we have an empty array, if we do set to skip the installation.
 globalThis.qwebrSetupRPackages = !(qwebrInstallRPackagesList.indexOf("") !== -1);
@@ -723,7 +727,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"code":"fit = lm(mpg ~ am, data = mtcars)\n\nsummary(fit)","id":1,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-1","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}}];
+globalThis.qwebrCellDetails = [{"code":"print(paste(\"El día\",Sys.Date(),\"Comencé con las RV y los metas a las\",\n            format(Sys.time(), \"%H:%M:%S\"), sep = \" \"))","id":1,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-1","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}}];
 
 </script>
 <script type="module">
@@ -1992,7 +1996,7 @@ globalThis.qwebrExecuteCode = async function (
     <img src="./logo_1.png" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Descubriendo los metaanálisis</span>
+    <span class="navbar-title">RV y Meta: Guía de supervivencia</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Buscar"></div>
@@ -2003,19 +2007,20 @@ globalThis.qwebrExecuteCode = async function (
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">Inicio</span></a>
+<span class="menu-text">Bienvenido</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-primeros-pasos" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Primeros pasos</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-primeros-pasos">    
-        <li>
-    <a class="dropdown-item" href="./ejercicios.html">
- <span class="dropdown-text">Ejercicios</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./revisiones.html"> 
+<span class="menu-text">Revisiones</span></a>
   </li>  
-    </ul>
-  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./meta.html"> 
+<span class="menu-text">Metaanálisis</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./ejercicios.html"> 
+<span class="menu-text">Ejercicios</span></a>
+  </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://www.osakidetza.euskadi.eus/portada-hospital-santa-marina/"> <i class="bi bi-globe2" role="img">
 </i> 
@@ -2033,8 +2038,14 @@ globalThis.qwebrExecuteCode = async function (
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">En esta página</h2>
+   
+  <ul>
+  <li><a href="#temas-a-tratar" id="toc-temas-a-tratar" class="nav-link active" data-scroll-target="#temas-a-tratar">Temas a tratar</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -2343,215 +2354,89 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 </header>
 
 
-<p>En esta página web que hemos preparado trataremos de resumir los conceptos generales a la hora de abordar los estudios de revisiones sistemáticas y metaanálisis.</p>
-<div class="quizdown">
----
-primary_color: orange
-secondary_color: lightgray
-text_color: black
-shuffle_questions: false
-shuffle_answers: true
----
-
-# Python Lists
-
-What is the value of `x[2]`?
-
-&gt; Python lists are mutable!
-
-~~~python
-x = [2, 3, 4]
-x[2] = 4
-print(x[2])
-~~~
-
-- [ ] 1
-- [ ] 2
-- [ ] 3
-- [x] 4
-
-## The sound of dog
-
-What do dogs sound like?
-
-&gt; Some hint
-
-- [ ] yes
-- [ ] no
-- [ ] `self.sound = "meow"`
-- [x] wuff
-
-## Put the [days](https://en.wikipedia.org/wiki/Day) in order!
-
-&gt; Monday is the *first* day of the week.
-
-1. Monday
-2. Tuesday
-3. Wednesday
-4. Friday
-5. Saturday  
-</div>
-<p><br></p>
-<hr>
-<div class="text-image-container text-content image-content">
-<p><img src="imagenes/R.png" class="img-fluid"></p>
+<p><strong>¡Bienvenid@!</strong> Como bien sabes las revisiones sistemáticas y los metaanálisis son dos de los estudios centrales a la hora de valorar la evidencia disponible en la literatura y generar las guías de práctica clínica que luego utilizamos para realizar la práctica basada en la evidencia.</p>
+<p>Conocer ambos tipo de estudios, saber realizarlos y saber interpretarlos es un eje central en todo profesional de salud debido a que su uso garantiza la calidad, equidad y eficiencia de la asistencia sanitaria que recibe la población.</p>
+<p>Durante esta breve sesión de 2 horas de duración, nos centraremos en presentar los conceptos principales de estos estudios así como la forma correcta de interpretarlos.</p>
+<p>Como es costumbre ya en nuestras sesiones de formación, hemos preparado esta pequeña página web con información y ejemplos para que puedas practicas.</p>
+<p>Mas adelante (y si es bien recibido) realizaremos una formación mas exhaustiva en este tipo de estudios en formato híbrido (presencial y online).</p>
+<p>¿Estas preparad@?</p>
 <center>
 <h1>
-¿Que es R?
+¡Comencemos!
 </h1>
-<p>R en un lenguaje de programación de <strong>uso libre y colaborativo</strong> centrado en el análisis estadístico creado en el año 1995 con una versión estable para el uso por el público general en el año 2000.</p>
-<p>En la actualidad se encuentra entre los 20 lenguajes de programación mas utilizados y dispone de conexión con otros lenguajes de programación como son Python, SQL, HTML, CSS o JavaScript.</p>
 </center>
-</div>
-<div class="text-image-container text-content image-content-1">
-<center>
-<h1>
-¿Que es Python?
-</h1>
-<p>Python es un lenguaje de programación de <strong>uso libre y colaborativo</strong> multiproposito que tiene sus orígenes a finales de la década de 1980 y principios de 1990.</p>
-<p>En la actualidad se encuentra entre los 20 lenguajes de programación mas utilizados y dispone de conexión con otros lenguajes de programación como son R, SQL, HTML, CSS o JavaScript.</p>
-</center>
-<p><img src="imagenes/Python.png" class="img-fluid"></p>
-</div>
 <hr>
-<h1>
-La importancia de su uso
-</h1>
-<p>En la actualidad, tanto R como Python representan los motores ‘’Gold standar’’ para la producción científica, siendo utilizados de forma profesional tanto por el sector privado como por el sector público en escenarios tan diversos como investigación física, matemática, economía o salud.</p>
-<p>R se encuentra centrado en el análisis estadístico y Python representa un lenguaje más amplio con capacidad para la programación en robótica, creación de páginas web… Sin embargo, durante los últimos años, se han desarrollado en R herramientas que van más allá del análisis estadístico, encontrando también desarrollo de herramientas para la adquisición y gestión de la información así como la difusión de los resultados.</p>
+<p><br> <br></p>
+<section id="temas-a-tratar" class="level2">
+<h2 class="anchored" data-anchor-id="temas-a-tratar">Temas a tratar</h2>
+<p>En la realización revisiones sistemáticas y meta-análisis se deben de realizar una serie de pasos para poder llevarlos a cabo de forma correcta. Durante esta formación recorreremos los pasos mas importantes, explicando todos ellos para que, al finalizar, seas capaz de comprender la realización de las revisiones sistemáticas y meta-análisis:</p>
+<ul>
+<li>Revisiones: En este apartado comentaremos la información referente a las revisiones sistemáticas.</li>
+<li>Meta-análisis: En este apartado comentaremos la información referente a los meta-análisis.</li>
+<li>Ejercicios: En este apartado dispones de diversos ejercicios y ejemplos sobre revisiones sistemáticas y meta-análisis.</li>
+</ul>
+<p>A su vez, y continuando con nuestro modelo colaborativo y de ciencia abierta, explicaremos como realizar los cálculos necesarios en el lenguaje de programación R.</p>
 <div class="contenedor_lista">
 <div class="lista">
 <h3 class="anchored">
-Ventajas de usar <em>R</em>
+Conceptos generales que trataremos durante la sesión
 </h3>
 <ul>
-<li>Análisis estadístico.</li>
-<li>Visualización de datos detallados.</li>
-<li>Informes y escritura académica.</li>
-<li>Manejo de datos.</li>
-</ul>
-</div>
-<div class="lista_1">
-<h3 class="anchored">
-Ventajas de usar <em>Python</em>
-</h3>
-<ul>
-<li>Proyectos multidisciplinarios.</li>
-<li>Inteligencia Artificial.</li>
-<li>Programa informáticos.</li>
-<li>Robótica.</li>
+<li>Introducción: ¿Qué es una Revisión Sistemática? ¿Qué es un Metaanálisis?</li>
+<li>Interpretación de una revisión sistemática: ¿Hasta donde podemos llegar?</li>
+<li>Interpretación de un metaanálisis: ¿En qué nos tenemos que fijar?</li>
+<li>Realización de estudios: ¿Qué herramientas son útiles para realizarlos?</li>
 </ul>
 </div>
 </div>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Característica</th>
-<th>R</th>
-<th>Python</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Diseñado para análisis estadístico</td>
-<td>✅</td>
-<td>✅</td>
-</tr>
-<tr class="even">
-<td>Multipropósito (desarrollo web, etc.)</td>
-<td>❌</td>
-<td>✅</td>
-</tr>
-<tr class="odd">
-<td>Código abierto</td>
-<td>✅</td>
-<td>✅</td>
-</tr>
-<tr class="even">
-<td>Gran cantidad de paquetes disponibles</td>
-<td>✅</td>
-<td>✅</td>
-</tr>
-<tr class="odd">
-<td>Facilidad de aprendizaje inicial</td>
-<td>❌</td>
-<td>✅</td>
-</tr>
-<tr class="even">
-<td>Potente visualización de datos</td>
-<td>✅</td>
-<td>❌</td>
-</tr>
-<tr class="odd">
-<td>Soporte para múltiples formatos de datos</td>
-<td>✅</td>
-<td>✅</td>
-</tr>
-<tr class="even">
-<td>Velocidad de ejecución</td>
-<td>❌</td>
-<td>✅</td>
-</tr>
-<tr class="odd">
-<td>Ideal para principiantes</td>
-<td>✅</td>
-<td>✅</td>
-</tr>
-<tr class="even">
-<td>Amplia comunidad y ecosistema</td>
-<td>✅</td>
-<td>✅</td>
-</tr>
-<tr class="odd">
-<td>Integración con sistemas de producción</td>
-<td>❌</td>
-<td>✅</td>
-</tr>
-<tr class="even">
-<td>Uso en desarrollo web</td>
-<td>✅</td>
-<td>✅</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<hr>
-<p>Durante esta breve sesión encontraremos ejemplos de los diversos usos de los lenguajes de programación así como de las herramientas a usar para optimizar el flujo de trabajo con ellos. Dispondréis de la siguiente información:</p>
-<ul>
-<li><strong>Forma de trabajo y Herramientas para la optimización del flujo de trabajo (<code>Primeros pasos</code>)</strong></li>
-</ul>
-<p>En esta sección explicaremos de forma breve la base de la programación así como los programas de <em>Uso libre y gratuito</em> que optimizan el flujo de trabajo con ambos lenguajes.</p>
-<ul>
-<li><strong>Herramientas para la recogida de datos y su gestión (<code>Gestión y Análisis: Obtención y gestión del dato</code>)</strong></li>
-</ul>
-<p>En esta sección explicaremos de forma breve las herramientas que los lenguajes disponen para la recogida de datos y su gestión; haciendo para ello uso de la integración con otros lenguajes de programación destinados a la gestión del dato (SQL y no solo SQL).</p>
-<ul>
-<li><strong>Análisis estadísticos y creación de algoritmos (<code>Gestión y Análisis: Análisis estadísticos y Más usos</code>)</strong></li>
-</ul>
-<p>En esta sección explicaremos de forma breve las capacidades de los lenguajes para la realización de análisis estadísticos avanzados, análisis geo-espaciales, minería de texto, redes neuronales, algoritmos no supervisados… A su vez, explicaremos otros usos que los lenguajes pueden llegar a tener.</p>
-<ul>
-<li><strong>Difusión del conocimiento (<code>Difusión resultados</code>)</strong></li>
-</ul>
-<p>En esta sección explicaremos de forma breve las herramientas que los lenguajes disponen para difundir el conocimiento. Desde la creación de páginas web (como la que se presenta), creación de presentaciones y/o la integración con el lenguaje <em>Latex</em> de creación de texto de alta calidad.</p>
-<hr>
+<h2 class="anchored">
+<strong>Cronograma de los pasos a seguir a la hora de realizar una Revisión Sistemática y Meta-análisis.</strong>
+</h2>
+<p>A continuación, en modo de cronograma, te mostramos resumidos los pasos más importantes a realizar a la hora de realizar una revisión sistematica y, posteriormente, su meta-análisis.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">timeline
+    title Flujo Revisiones sistemáticas - Meta-análisis
+    section Revisión sistemática
+        Pregunta de investigación : Creación de la pregunta de investigación.
+        Búsqueda sistemática : Creación de la ecuación de búsqueda.
+                             : selección de bases de datos.
+        Selección de artículo : Cribado por fases.
+                              : Lectura crítica de la metodología de los artículos.
+        Síntesis de la evidencia : Resumen sistematizado y objetivo de la evidencia.
+    section Meta-análisis
+        Resumen de los resultados : Organización de los resultados de los artículos.
+        Heterogeneidad de los datos : Valoración de la heterogeneidad de los resultados.
+        Resultado conjunto : Valoración del resultado conjunto de los artículos.
+                           : Valoración del peso de cada artículo en el resultado global.
+        Sesgo de publicación : Valoración de un posible sesgo de publicación.
+
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>Finalmente, te mostramos la consola de R que dispondrás para ejecutar los códigos en los ejercicios. En ella puedes escribir y/o ejecutar las órdenes que se encuentren escritas o que escriba. Pulsa “Run code” y que se haga la magia.</p>
 <div id="qwebr-insertion-location-1"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</section></main></div>
 <center>
 <h1>
 ¿Estás preparado/a?
 </h1>
-<h4 class="anchored">
+<h4>
 ¡Comencemos!
 </h4>
 </center>
 
 
 
-</main> <!-- /main -->
+
+ <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
@@ -2964,7 +2849,7 @@ Ventajas de usar <em>Python</em>
     }
   });
   </script>
-</div> <!-- /content -->
+ <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">

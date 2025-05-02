@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Bienvenidos al curso",
     "section": "",
-    "text": "En esta página web que hemos preparado trataremos de resumir los conceptos generales a la hora de abordar los estudios de revisiones sistemáticas y metaanálisis.\n\n---\nprimary_color: orange\nsecondary_color: lightgray\ntext_color: black\nshuffle_questions: false\nshuffle_answers: true\n---\n\n# Python Lists\n\nWhat is the value of `x[2]`?\n\n&gt; Python lists are mutable!\n\n~~~python\nx = [2, 3, 4]\nx[2] = 4\nprint(x[2])\n~~~\n\n- [ ] 1\n- [ ] 2\n- [ ] 3\n- [x] 4\n\n## The sound of dog\n\nWhat do dogs sound like?\n\n&gt; Some hint\n\n- [ ] yes\n- [ ] no\n- [ ] `self.sound = \"meow\"`\n- [x] wuff\n\n## Put the [days](https://en.wikipedia.org/wiki/Day) in order!\n\n&gt; Monday is the *first* day of the week.\n\n1. Monday\n2. Tuesday\n3. Wednesday\n4. Friday\n5. Saturday  \n\n\n\n\n\n\n\n¿Que es R?\n\nR en un lenguaje de programación de uso libre y colaborativo centrado en el análisis estadístico creado en el año 1995 con una versión estable para el uso por el público general en el año 2000.\nEn la actualidad se encuentra entre los 20 lenguajes de programación mas utilizados y dispone de conexión con otros lenguajes de programación como son Python, SQL, HTML, CSS o JavaScript.\n\n\n\n\n\n¿Que es Python?\n\nPython es un lenguaje de programación de uso libre y colaborativo multiproposito que tiene sus orígenes a finales de la década de 1980 y principios de 1990.\nEn la actualidad se encuentra entre los 20 lenguajes de programación mas utilizados y dispone de conexión con otros lenguajes de programación como son R, SQL, HTML, CSS o JavaScript.\n\n\n\n\n\nLa importancia de su uso\n\nEn la actualidad, tanto R como Python representan los motores ‘’Gold standar’’ para la producción científica, siendo utilizados de forma profesional tanto por el sector privado como por el sector público en escenarios tan diversos como investigación física, matemática, economía o salud.\nR se encuentra centrado en el análisis estadístico y Python representa un lenguaje más amplio con capacidad para la programación en robótica, creación de páginas web… Sin embargo, durante los últimos años, se han desarrollado en R herramientas que van más allá del análisis estadístico, encontrando también desarrollo de herramientas para la adquisición y gestión de la información así como la difusión de los resultados.\n\n\n\nVentajas de usar R\n\n\nAnálisis estadístico.\nVisualización de datos detallados.\nInformes y escritura académica.\nManejo de datos.\n\n\n\n\nVentajas de usar Python\n\n\nProyectos multidisciplinarios.\nInteligencia Artificial.\nPrograma informáticos.\nRobótica.\n\n\n\n\n\n\nCaracterística\nR\nPython\n\n\n\n\nDiseñado para análisis estadístico\n✅\n✅\n\n\nMultipropósito (desarrollo web, etc.)\n❌\n✅\n\n\nCódigo abierto\n✅\n✅\n\n\nGran cantidad de paquetes disponibles\n✅\n✅\n\n\nFacilidad de aprendizaje inicial\n❌\n✅\n\n\nPotente visualización de datos\n✅\n❌\n\n\nSoporte para múltiples formatos de datos\n✅\n✅\n\n\nVelocidad de ejecución\n❌\n✅\n\n\nIdeal para principiantes\n✅\n✅\n\n\nAmplia comunidad y ecosistema\n✅\n✅\n\n\nIntegración con sistemas de producción\n❌\n✅\n\n\nUso en desarrollo web\n✅\n✅\n\n\n\n\n\n\n\n\n\nDurante esta breve sesión encontraremos ejemplos de los diversos usos de los lenguajes de programación así como de las herramientas a usar para optimizar el flujo de trabajo con ellos. Dispondréis de la siguiente información:\n\nForma de trabajo y Herramientas para la optimización del flujo de trabajo (Primeros pasos)\n\nEn esta sección explicaremos de forma breve la base de la programación así como los programas de Uso libre y gratuito que optimizan el flujo de trabajo con ambos lenguajes.\n\nHerramientas para la recogida de datos y su gestión (Gestión y Análisis: Obtención y gestión del dato)\n\nEn esta sección explicaremos de forma breve las herramientas que los lenguajes disponen para la recogida de datos y su gestión; haciendo para ello uso de la integración con otros lenguajes de programación destinados a la gestión del dato (SQL y no solo SQL).\n\nAnálisis estadísticos y creación de algoritmos (Gestión y Análisis: Análisis estadísticos y Más usos)\n\nEn esta sección explicaremos de forma breve las capacidades de los lenguajes para la realización de análisis estadísticos avanzados, análisis geo-espaciales, minería de texto, redes neuronales, algoritmos no supervisados… A su vez, explicaremos otros usos que los lenguajes pueden llegar a tener.\n\nDifusión del conocimiento (Difusión resultados)\n\nEn esta sección explicaremos de forma breve las herramientas que los lenguajes disponen para difundir el conocimiento. Desde la creación de páginas web (como la que se presenta), creación de presentaciones y/o la integración con el lenguaje Latex de creación de texto de alta calidad.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n¿Estás preparado/a?\n\n\n¡Comencemos!"
+    "text": "¡Bienvenid@! Como bien sabes las revisiones sistemáticas y los metaanálisis son dos de los estudios centrales a la hora de valorar la evidencia disponible en la literatura y generar las guías de práctica clínica que luego utilizamos para realizar la práctica basada en la evidencia.\nConocer ambos tipo de estudios, saber realizarlos y saber interpretarlos es un eje central en todo profesional de salud debido a que su uso garantiza la calidad, equidad y eficiencia de la asistencia sanitaria que recibe la población.\nDurante esta breve sesión de 2 horas de duración, nos centraremos en presentar los conceptos principales de estos estudios así como la forma correcta de interpretarlos.\nComo es costumbre ya en nuestras sesiones de formación, hemos preparado esta pequeña página web con información y ejemplos para que puedas practicas.\nMas adelante (y si es bien recibido) realizaremos una formación mas exhaustiva en este tipo de estudios en formato híbrido (presencial y online).\n¿Estas preparad@?"
   },
   {
     "objectID": "difusion_externa.html",
@@ -16,8 +16,92 @@
   {
     "objectID": "ejercicios.html",
     "href": "ejercicios.html",
-    "title": "Difusión de conocimiento",
+    "title": "Ejercicios prácticos",
     "section": "",
-    "text": "vvv\n\n---\nprimary_color: orange\nsecondary_color: lightgray\ntext_color: black\nshuffle_questions: false\nshuffle_answers: true\n---\n\n\nWhat is the value of `x[2]`?\n\n&gt; Python lists are mutable!\n\n~~~python\nx = [2, 3, 4]\nx[2] = 4\nprint(x[2])\n~~~\n\n- [ ] 1\n- [ ] 2\n- [ ] 3\n- [x] 4\n\n## The sound of dog\n\nWhat do dogs sound like?\n\n&gt; Some hint\n\n- [ ] yes\n- [ ] no\n- [ ] `self.sound = \"meow\"`\n- [x] wuff\n\n## Put the [days](https://en.wikipedia.org/wiki/Day) in order!\n\n&gt; Monday is the *first* day of the week.\n\n1. Monday\n2. Tuesday\n3. Wednesday\n4. Friday\n5. Saturday  \n\nComo hemos comentado, nuestros lenguajes de programación son de carácter abierto y colaborativo. Gracias a estos se han creado comunidades para la difusión del conocimiento a gran escala; formas de poder alojar y diseminar tu conocimiento. A continuación os vamos presentar algunas de esas iniciativas.\n\nOrganización Bookdown\nLa organización Bookdown permite alojar aquellos libros en formato html que hayas creado para poder difundirlos de forma totalmente gratuita.\n\n\nShinyapps.io\nLa plataforma Shinyapps.io se trata de un servicio donde poder alojar tus aplicaciones shiny para difundirlas a través de internet.\n\n\nGithub\nLa página web Github permite alojar tu código, colaborar con otras personas y alojar páginas web y aplicaciones.\n\n\nPosit cloud\nLa plataforma Posit Cloud permite trabajar con una versión de Rstudio online y de forma colaborativa.\n\n\n\n\n\nBookdown\n\n\n\n\n\n\n\nShinyappsio\n\n\n\n\n\n\n\nGithub\n\n\n\n\n\n\n\nPosit cloud\n\n\n\n\n\n\nTe pedimos que rellenes esta pequeña encuesta de formación que nos sirve para conocer vuestras inquietudes y necesidades.\n\n\n¡Muchas gracias!\n\n\n\n\n\n\n\n\nEncuesta\n\n\n\n\n\n\n\n\n\nComo puedes ver las posibilidades de los lenguajes de programación son infinitos\n\n\n(podríamos decir que el límite es tu imaginación 😉)\n\n\nAdemás promulgan el carácter abierto que la ciencia siempre debería tener\n\n\n\n\n:::::\n:::::"
+    "text": "En esta sección encontrarás ejercicios prácticos. El primer cuestionario tratará sobre preguntas genéricas acerca de las revisiones sistemáticas y los meta-análisis. Tras él, te presentamos 3 artículos científicos para realizarles una lectura crítica. Finalmente, dispones de 2 ejemplos de meta-análisis realizado con R (con su código de programación): uno sobre diferencia de medias y otro sobre diferencia de ratios."
+  },
+  {
+    "objectID": "ejercicios.html#keating-et-al.-1997",
+    "href": "ejercicios.html#keating-et-al.-1997",
+    "title": "Ejercicios prácticos",
+    "section": "Keating et al. 1997",
+    "text": "Keating et al. 1997\nDownload PDF file."
+  },
+  {
+    "objectID": "ejercicios.html#moreao-et-al.-1984",
+    "href": "ejercicios.html#moreao-et-al.-1984",
+    "title": "Ejercicios prácticos",
+    "section": "Moreao et al. 1984",
+    "text": "Moreao et al. 1984\nDownload PDF file."
+  },
+  {
+    "objectID": "ejercicios.html#omalley-et-al.-2025",
+    "href": "ejercicios.html#omalley-et-al.-2025",
+    "title": "Ejercicios prácticos",
+    "section": "O’Malley et al. 2025",
+    "text": "O’Malley et al. 2025\nDownload PDF file.\nComo hemos comentado, nuestros lenguajes de programación son de carácter abierto y colaborativo. Gracias a estos se han creado comunidades para la difusión del conocimiento a gran escala; formas de poder alojar y diseminar tu conocimiento. A continuación os vamos presentar algunas de esas iniciativas."
+  },
+  {
+    "objectID": "revisiones.html",
+    "href": "revisiones.html",
+    "title": "Revisiones Sistemáticas",
+    "section": "",
+    "text": "Comencemos con las Revisiones Sistemáticas. Qué son, porque son importantes y cuales con los pasos e interpretaciones que debemos hacer sobre ellas con los temas que trataremos en esta sección."
+  },
+  {
+    "objectID": "revisiones.html#entendiendo-las-revisiones-sistemáticas",
+    "href": "revisiones.html#entendiendo-las-revisiones-sistemáticas",
+    "title": "Revisiones Sistemáticas",
+    "section": "Entendiendo las Revisiones Sistemáticas",
+    "text": "Entendiendo las Revisiones Sistemáticas\nTodos hemos oído hablar alguna vez de la pirámide de la evidencia. En dicha pirámide quedan recogidos, de alguna manera, los distintos tipos de estudios científicos que arrojan evidencia a la práctica clínica de una forma jerarquizada.\nAsí pasaríamos de un nivel básico, nivel de baja evidencia, como son las opiniones de expertos hasta un nivel de evidencia muy alto como son las guías de práctica clínica. Si te fijas bien, podrás ver como las Revisiones sistemáticas y los metaanálisis son dos los estudios con mayor evidencia. Y no es para menos, ya que son capaces de recoger, resumir y CONJUNTAR la evidencia de muchos estudios.\n\n\n\n\n\nDebido a estas razones, las revisiones sistemáticas y los metanaálisis representan dos de los mas importantes para realizar. Ambos son complementarios y podríamos llegar a decir que uno es “el paso previo” del otro. Por ello se debe conocer bien su diferencia."
+  },
+  {
+    "objectID": "revisiones.html#qué-son-las-revisiones-sistemáticas",
+    "href": "revisiones.html#qué-son-las-revisiones-sistemáticas",
+    "title": "Revisiones Sistemáticas",
+    "section": "¿Qué son las revisiones sistemáticas?",
+    "text": "¿Qué son las revisiones sistemáticas?\nComo su propio nombre indica, las revisiones sistemáticas son revisiones de artículos primarios. Es decir, se realiza una búsqueda de los artículos primarios publicados hasta la fecha sobre un tema en concreto y se resume los resultados que dichos artículos ofrecen. Sin embargo, se deben tener en cuenta ciertas características de los artículos primarios:\n\nLa población sobra la que investigan.\nLa muestra que han utilizado.\nLos datos recogidos."
+  },
+  {
+    "objectID": "ejercicios.html#nightingale-et-al.-2024",
+    "href": "ejercicios.html#nightingale-et-al.-2024",
+    "title": "Ejercicios prácticos",
+    "section": "Nightingale et al. 2024",
+    "text": "Nightingale et al. 2024\nDownload PDF file.\nResponde al cuestionario:\n\n---\nprimary_color: orange\nsecondary_color: lightgray\ntext_color: black\nshuffle_questions: false\nshuffle_answers: true\n---\n\n\n## ¿Qué tipo de estudio es?\n\n&gt; ¿Es un estudio de intervención?       \n\n1. [ ] Cohorte\n1. [x] Ensayo clínico aleatorio\n1. [ ] Ensayo clínico no aleatorio\n1. [ ] Casos y controles\n\n## ¿Qué características hacen bueno a este tipo de estudio?\n\n&gt; ¿Cómo puedo aislar la causalidad?\n\n&gt; Some hint\n\n- [x] Asignación aleatoria de la muestra\n- [x] Selección aleatoria de la muestra\n- [x] Homogeneidad de las variables confusoras\n- [ ] Grupo intervención y control desiguales\n\n## ¿La muestra fue selecciona de forma aleatoria a cada uno de los grupo?\n\n1. [x] Sí\n1. [ ] No\n\n## ¿Existió algún tipo de cegamiento a la hora de asignar a los participantes?\n\n1. [x] Sí\n1. [ ] No\n\n## ¿Fueron los grupos similares antes de realizar la intervención?\n\n&gt; ¡Nunca te olvides de las variables confusoras!\n\n1. [x] Sí\n1. [ ] No\n\n## ¿Existío algún tipo de cegamiento a la hora de realizar la medición de las variables objetivo?\n\n1. [x] Sí\n1. [ ] No\n\n## ¿El grupo control se trato igual al grupo intervención a excepción de la intervención?\n\n1. [x] Sí\n1. [ ] No\n\n## ¿Se controló que los instrumentos de medición fueran identicos para todos los participantes?\n\n&gt; ¿Y si 2 tensiometros tuvieran un diferencia de 10 mmHg y no lo supieramos?\n\n1. [x] Sí\n1. [ ] No\n\n## ¿Las personas que realizaron las mediciones se encontraban instruidas para realizalas?\n\n1. [x] Sí\n1. [ ] No\n\n## ¿Se realizó un cálculo del tamaño muestral necesario?\n\n1. [x] Sí\n1. [ ] No\n\n## ¿Durante el análisis estadístico los analistas podían identificar a que grupo pertenecida cada medición?\n\n&gt; ¿Y si me interesa que salga que \"Sí, funciona\"?\n\n1. [ ] Sí\n1. [x] No\n\n## ¿Se realizó el análisis estadístico de forma correcta?\n\n1. [x] Sí\n1. [ ] No"
+  },
+  {
+    "objectID": "index.html#temas-a-tratar",
+    "href": "index.html#temas-a-tratar",
+    "title": "Bienvenidos al curso",
+    "section": "Temas a tratar",
+    "text": "Temas a tratar\nEn la realización revisiones sistemáticas y meta-análisis se deben de realizar una serie de pasos para poder llevarlos a cabo de forma correcta. Durante esta formación recorreremos los pasos mas importantes, explicando todos ellos para que, al finalizar, seas capaz de comprender la realización de las revisiones sistemáticas y meta-análisis:\n\nRevisiones: En este apartado comentaremos la información referente a las revisiones sistemáticas.\nMeta-análisis: En este apartado comentaremos la información referente a los meta-análisis.\nEjercicios: En este apartado dispones de diversos ejercicios y ejemplos sobre revisiones sistemáticas y meta-análisis.\n\nA su vez, y continuando con nuestro modelo colaborativo y de ciencia abierta, explicaremos como realizar los cálculos necesarios en el lenguaje de programación R.\n\n\n\nConceptos generales que trataremos durante la sesión\n\n\nIntroducción: ¿Qué es una Revisión Sistemática? ¿Qué es un Metaanálisis?\nInterpretación de una revisión sistemática: ¿Hasta donde podemos llegar?\nInterpretación de un metaanálisis: ¿En qué nos tenemos que fijar?\nRealización de estudios: ¿Qué herramientas son útiles para realizarlos?\n\n\n\n\nCronograma de los pasos a seguir a la hora de realizar una Revisión Sistemática y Meta-análisis.\n\nA continuación, en modo de cronograma, te mostramos resumidos los pasos más importantes a realizar a la hora de realizar una revisión sistematica y, posteriormente, su meta-análisis.\n\n\n\n\n\ntimeline\n    title Flujo Revisiones sistemáticas - Meta-análisis\n    section Revisión sistemática\n        Pregunta de investigación : Creación de la pregunta de investigación.\n        Búsqueda sistemática : Creación de la ecuación de búsqueda.\n                             : selección de bases de datos.\n        Selección de artículo : Cribado por fases.\n                              : Lectura crítica de la metodología de los artículos.\n        Síntesis de la evidencia : Resumen sistematizado y objetivo de la evidencia.\n    section Meta-análisis\n        Resumen de los resultados : Organización de los resultados de los artículos.\n        Heterogeneidad de los datos : Valoración de la heterogeneidad de los resultados.\n        Resultado conjunto : Valoración del resultado conjunto de los artículos.\n                           : Valoración del peso de cada artículo en el resultado global.\n        Sesgo de publicación : Valoración de un posible sesgo de publicación.\n\n\n\n\n\n\n\nFinalmente, te mostramos la consola de R que dispondrás para ejecutar los códigos en los ejercicios. En ella puedes escribir y/o ejecutar las órdenes que se encuentren escritas o que escriba. Pulsa “Run code” y que se haga la magia.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "ejercicios.html#cuestionarios-general",
+    "href": "ejercicios.html#cuestionarios-general",
+    "title": "Ejercicios prácticos",
+    "section": "Cuestionarios general",
+    "text": "Cuestionarios general\nA continuación dispones del cuestionario general acerca de las Revisiones sistemáticas y Meta-análisis.\n\n---\nprimary_color: orange\nsecondary_color: lightgray\ntext_color: black\nshuffle_questions: false\nshuffle_answers: true\n---\n\n\nWhat is the value of `x[2]`?\n\n&gt; Python lists are mutable!\n\n~~~python\nx = [2, 3, 4]\nx[2] = 4\nprint(x[2])\n~~~\n\n- [ ] 1\n- [ ] 2\n- [ ] 3\n- [x] 4\n\n## The sound of dog\n\nWhat do dogs sound like?\n\n&gt; Some hint\n\n- [ ] yes\n- [ ] no\n- [ ] `self.sound = \"meow\"`\n- [x] wuff\n\n## Put the [days](https://en.wikipedia.org/wiki/Day) in order!\n\n&gt; Monday is the *first* day of the week.\n\n1. Monday\n2. Tuesday\n3. Wednesday\n4. Friday\n5. Saturday"
+  },
+  {
+    "objectID": "ejercicios.html#meta-análisis-de-medias",
+    "href": "ejercicios.html#meta-análisis-de-medias",
+    "title": "Ejercicios prácticos",
+    "section": "Meta-análisis de medias",
+    "text": "Meta-análisis de medias\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "ejercicios.html#meta-análisis-de-diferencia-de-medias-con-análisis-de-sensibilidad",
+    "href": "ejercicios.html#meta-análisis-de-diferencia-de-medias-con-análisis-de-sensibilidad",
+    "title": "Ejercicios prácticos",
+    "section": "Meta-análisis de diferencia de medias con análisis de sensibilidad",
+    "text": "Meta-análisis de diferencia de medias con análisis de sensibilidad\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "ejercicios.html#meta-análisis-de-proporciones-con-subgrupo-y-análisis-de-sesgo-de-publicación",
+    "href": "ejercicios.html#meta-análisis-de-proporciones-con-subgrupo-y-análisis-de-sesgo-de-publicación",
+    "title": "Ejercicios prácticos",
+    "section": "Meta-análisis de proporciones con subgrupo y análisis de sesgo de publicación",
+    "text": "Meta-análisis de proporciones con subgrupo y análisis de sesgo de publicación\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
   }
 ]
