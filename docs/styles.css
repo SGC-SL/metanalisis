@@ -139,6 +139,7 @@ h4 {
 .contenedor {
       position: relative;
       display: flex;
+      justify-content: center;
       
       gap: 5px;
     }
@@ -164,7 +165,7 @@ h4 {
             border: 1px solid #000; /* Borde del cuadro */
             border-radius: 10px; /* Bordes redondeados */
             padding: 20px; /* Espaciado interno */
-            width: 900px;
+            width: auto;
             background-color: white;: ;/* Ancho del cuadro */
         }
 
