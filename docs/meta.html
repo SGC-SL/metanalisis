@@ -2393,7 +2393,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <section id="entendiendo-los-meta-análisis" class="level2">
 <h2 class="anchored" data-anchor-id="entendiendo-los-meta-análisis">Entendiendo los meta-análisis</h2>
 <p>Podríamos decir que los meta-análisis son el paso lógico a seguir tras una revisión sistemática. Como bien sabes, generalmente en sanidad utilizamos la argumentación inductiva. Es decir, generalizamos afirmaciones a través de encontrar patrones con la estadística. Esta situación conlleva a que los estudios primarios suelan tener (si se encuentran correctamente realizados) validez interna; pero difícilmente logran tener validez externa. Es decir, debido a que son muestras pequeñas, que se han realizado en un país en concreto u otro factores, nos resulta complicado generalizar dichos resultados.</p>
-<p>Bajo estas circunstancias surgieron los estudios meta-analítico. ¿Por que no podemos localizar varios estudios que traten los mismos temas, conjuntarlos y obtener un resultado global como si se tratase de un estudio gigante como toda esa muestra?</p>
+<p>Bajo estas circunstancias surgieron los estudios meta-analíticos. ¿Por que no podemos localizar varios estudios que traten los mismos temas, conjuntarlos y obtener un resultado global como si se tratase de un estudio gigante como toda esa muestra?</p>
 <p>Posteriormente, tras esta idea surgiendo otras, como las meta-regresiones o los meta-análisis en red. En el último apartado trataremos de dar unas pequeñas pinceladas sobre estos estudios; pero ahora…</p>
 <center>
 ¡Comencemos desde el principio!
@@ -2401,7 +2401,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 </section>
 <section id="qué-fases-poseen-los-meta-análisis" class="level2">
 <h2 class="anchored" data-anchor-id="qué-fases-poseen-los-meta-análisis">¿Qué fases poseen los meta-análisis?</h2>
-<p>En esencia, los meta-análisis tratan de agrupan y dar un resultado conjunto de los resultados de los estudios localizados tras una revisión sistemática. Por ello, pueden realizar tantos tipos de meta-análisis como análisis estadísticos existen. Sin embargo, en aras del aprendizaje, en esta formación nos centraremos en los más simples: aquellos que agrupan estudios que valoran diferencia de proporciones y diferencia de medias.</p>
+<p>En esencia, los meta-análisis tratan de agrupan y dar un resultado conjunto de los resultados de los estudios localizados tras una revisión sistemática. Por ello, se pueden realizar tantos tipos de meta-análisis como análisis estadísticos existen. Sin embargo, en aras del aprendizaje, en esta formación nos centraremos en los más simples: aquellos que agrupan estudios que valoran diferencia de proporciones y diferencia de medias.</p>
 <section id="las-fases-de-un-meta-análisis-general" class="level3">
 <h3 class="anchored" data-anchor-id="las-fases-de-un-meta-análisis-general">Las fases de un meta-análisis general</h3>
 <p>Todo meta-análisis, independientemente de su complejidad, contará con las siguientes fases:</p>
@@ -2506,13 +2506,13 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <li>Interpretación de los resultados</li>
 </ol>
 <p>Lo que acabamos de generar son los resultados conjuntos los estudios incluidos. A la hora de valorar los resultados, debemos seguir una serie de pasos:</p>
-<p>6.1. Valoración de la heterogeneidad: La heterogeneidad nos demuestra cuan diferentes son los resultados de los estudios. Si los estudios son muy diferentes entre ellos puede suceder que nuestre resultado se encuentre muy sesgado. Por ello, de forma general se recomienda valorar el resultado agrupado cuando la heterogeneidad no es estadístamente significativa o baja. Para valorar la heterogeneidad se puede hacer uso de la I^2 (valora en porcentaje la cantidad de heterogeneidad) y el estadístico de heterogeneidad. Si la heterogeneidad es alta, se puede realizar un análisis de sensibilidad para ver como se reduciría la heterogeneidad eliminando los estudios del análisis. A continuación, dispones de un ejemplo hecho con R:</p>
+<p>6.1. Valoración de la heterogeneidad: La heterogeneidad nos demuestra cuan diferentes son los resultados de los estudios. Si los estudios son muy diferentes entre ellos puede suceder que nuestro resultado se encuentre muy sesgado. Por ello, de forma general se recomienda valorar el resultado agrupado cuando la heterogeneidad no es estadístamente significativa o baja. Para valorar la heterogeneidad se puede hacer uso de la I^2 (valora en porcentaje la cantidad de heterogeneidad) y el estadístico de heterogeneidad. Si la heterogeneidad es alta, se puede realizar un análisis de sensibilidad para ver como se reduciría la heterogeneidad eliminando los estudios del análisis. A continuación, dispones de un ejemplo hecho con R:</p>
 <div id="qwebr-insertion-location-3"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-<p>6.2. Valoración el resultado conjunto de los estudios: Tras ellos, se valora el resultado conjunto. En este caso se valora la diferencia de medias con sus respectivos intervalos de confianza al 95% y el valor de p, siendo en este caso, estadísticamente significativo.</p>
+<p>6.2. Valoración del resultado conjunto de los estudios: Tras ellos, se valora el resultado conjunto. En este caso se valora la diferencia de medias con sus respectivos intervalos de confianza al 95% y el valor de p, siendo en este caso, estadísticamente significativo.</p>
 <div id="qwebr-insertion-location-4"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-<p>6.3 Valoración del peso de los artículos: Los estudios incluidos tienen distintos peso en función de los grandes que sean. Un estudio con una muestra de 10 personas no tendrá el mismo peso que uno con 10.000 participantes. Por ello, debemos valorar el peso de cada artículo, es decir, lo que aporta cada estudio al resultado agrupado. A conitnuación te mostramos como hacerlo en R:</p>
+<p>6.3 Valoración del peso de los artículos: Los estudios incluidos tienen distintos peso en función de los grandes que sean. Un estudio con una muestra de 10 personas no tendrá el mismo peso que uno con 10.000 participantes. Por ello, debemos valorar el peso de cada artículo, es decir, lo que aporta cada estudio al resultado agrupado. A continuación te mostramos como hacerlo en R:</p>
 <div id="qwebr-insertion-location-5"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 <p>6.4 Creación del gráfico de bosque: Finalmente, podemos crear un gráfico de bosque que resuma toda la información que hemos analizado de forma gráfica. Te mostramos como hacerlo en R:</p>
@@ -2530,6 +2530,20 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <li>Valoración por subgrupo (opcional)</li>
 </ol>
 <p>Si consideramos que los estudios deben ser analizados por subgrupos (debido a alguna características que hemos detectado durante la revisión sistemática), se podría realizar un análisis por subgrupos. Seleccionar grupos de estudios y realizar los pasos previos para lograr resultados conjuntos por cada grupo.</p>
+<ol start="9" type="1">
+<li>Valoración del grado de recomendación</li>
+</ol>
+<p>Tras haber realizado nuestro estudio, nos encontramos en posición de valorar el grado de evidencia que este ofrece. En este sentido, encontramos organizaciones que intentan protocolarizar la toma de decisiones respecto al grado de evidencia, siendo una de ella la organización <strong>GRADE</strong></p>
+<div class="contenedor">
+<div class="card">
+<center>
+<h3 class="anchored">
+<a href="https://www.gradepro.org/">GRADE</a>
+</h3>
+<p><a href="https://www.gradepro.org/"><img src="documentos/grade.png" alt="Descripción de la imagen"></a></p>
+</center>
+</div>
+</div>
 <p><br> <br></p>
 <p>A continuación, te presentamos el cronograma general a seguir para la realización de una revisión sistemática:</p>
 <div class="cell" data-layout-align="default">
@@ -2595,7 +2609,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 </section>
 <section id="los-meta-análisis-en-red." class="level1">
 <h1>Los meta-análisis en red.</h1>
-<p>Por último, comentamos de forma breve los meta-análisis en red. Debido a que los meta-análisis valoran los resultados conjuntos de varios estudios alguien penso: ¿Y si utilizamos este análisis para comparar intervenciones que no se han comparado directamente pero si entre estudios? Así, si tenemos, por ejemplo, la siguiente situación:</p>
+<p>Por último, comentamos de forma breve los meta-análisis en red. Debido a que los meta-análisis valoran los resultados conjuntos de varios estudios; alguien pensó…: ¿Y si utilizamos este análisis para comparar intervenciones que no se han comparado directamente pero si entre estudios? Así, si tenemos, por ejemplo, la siguiente situación:</p>
 <ul>
 <li>Ensayo clínico 1: Paracetamol VS placebo –&gt; Dolor.</li>
 <li>Ensayo clínico 2: Dexketaprofeno VS placebo –&gt; Dolor.</li>
